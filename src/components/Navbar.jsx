@@ -34,7 +34,7 @@ export default function Navbar() {
     <header className="relative z-50 py-[20px]">
       <Container>
         <nav
-          className={`flex items-center justify-between rounded-xl bg-white px-[15px] py-[15px] ${CARD_SHADOW}`}
+          className={`flex items-center justify-between rounded-[20px] md:rounded-xl bg-white px-[15px] py-[15px] ${CARD_SHADOW}`}
         >
           <Link to="/" aria-label="Pexio home">
             <div className="w-[96px] pl-[10px]">

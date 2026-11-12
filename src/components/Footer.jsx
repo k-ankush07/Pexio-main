@@ -34,12 +34,12 @@ export default function Footer() {
            Building smarter Shopify solutions for business growth.
           </p>
 
-          <nav className="mt-[20px] flex flex-wrap items-center justify-around sm:justify-center gap-x-[32px] gap-y-[10px] pb-[22px]">
+          <nav className="mt-[20px] mb-[22px] grid w-full grid-cols-2 overflow-hidden rounded-[12px] border border-[#E2E8F0] sm:mb-0 sm:flex sm:flex-wrap sm:items-center sm:justify-center sm:gap-x-[32px] sm:gap-y-[10px] sm:overflow-visible sm:rounded-none sm:border-0 sm:pb-[22px]">
             {links.map((l) => (
               <a
                 key={l.label}
                 href={l.href}
-                className="text-[14px] sm:text-[18px] text-[#1A1523] transition hover:text-[#703CE1]"
+                className="py-[12px] text-[14px] text-[#1A1523] transition hover:text-[#703CE1] max-sm:odd:border-r max-sm:[&:nth-child(-n+2)]:border-b max-sm:border-[#E2E8F0] sm:py-0 sm:text-[18px]"
               >
                 {l.label}
               </a>
