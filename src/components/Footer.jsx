@@ -1,0 +1,59 @@
+import Container from "./Container";
+
+const A = "https://apps.pexio.app/assets";
+
+const links = [
+  { label: "About Us", href: "/about" },
+  { label: "Contact Us", href: "#contact" },
+  { label: "Terms & Conditions", href: "#" },
+  { label: "Privacy Policy", href: "#" },
+];
+
+export default function Footer() {
+  return (
+    <footer className="w-full bg-white">
+      <Container>
+        <div className="flex flex-col items-center pt-[40px] text-center md:pt-[48px]">
+          <a
+            href="/"
+            aria-label="Pexio AB Testing home"
+            className="inline-block"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
+            <img
+              src="https://pexio.app/assets/Brand%20Logo%20Area.svg"
+              alt="Pexio AB Testing"
+              className="h-auto w-[110px] object-contain md:w-[130px]"
+            />
+          </a>
+
+          <p className="mt-[20px] text-[14px] sm:text-[16px] leading-[23px] text-[#6B6580]">
+           Building smarter Shopify solutions for business growth.
+          </p>
+
+          <nav className="mt-[20px] flex flex-wrap items-center justify-around sm:justify-center gap-x-[32px] gap-y-[10px] pb-[22px]">
+            {links.map((l) => (
+              <a
+                key={l.label}
+                href={l.href}
+                className="text-[14px] sm:text-[18px] text-[#1A1523] transition hover:text-[#703CE1]"
+              >
+                {l.label}
+              </a>
+            ))}
+          </nav>
+        </div>
+
+        {/* Divider + copyright */}
+        <div className="border-t border-[#ECEAF3] py-[18px] text-center">
+          <p className="text-[11px] sm:text-[14px] text-[#6B6580]">
+            © 2026 Pexio. All rights reserved.
+          </p>
+        </div>
+      </Container>
+    </footer>
+  );
+}
