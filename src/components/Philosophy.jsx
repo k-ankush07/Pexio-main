@@ -6,17 +6,17 @@ const cards = [
   {
     title: "Dedicated Merchant Support",
     text: "Direct contact with Shopify engineers who understand store architecture.",
-    img: "https://pexio.app/assets/desdicated.svg",
+    img: "https://pexio.app/images/desdicated.svg",
   },
   {
     title: "Speed-First Architecture",
     text: "Zero storefront bloat ensuring high Core Web Vitals and lightning load speeds.",
-    img: "https://pexio.app/assets/speed.svg",
+    img: "https://pexio.app/images/speed.svg",
   },
   {
     title: "Zero Bloat Guarantee",
     text: "Clean script injection that uninstalls completely with zero residual theme clutter.",
-    img: "https://pexio.app/assets/zero.svg",
+    img: "https://pexio.app/images/zero.svg",
   },
 ];
 

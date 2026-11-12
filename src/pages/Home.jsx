@@ -12,7 +12,7 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <div>
-      <div className="bg-[url('https://pexio.app/assets/Section%20-%20HERO%20SECTION.jpg')] bg-cover bg-center bg-no-repeat">
+      <div className="bg-[url('https://pexio.app/images/Section%20-%20HERO%20SECTION.jpg')] bg-cover bg-center bg-no-repeat">
         <Navbar />
         <Hero />
       </div>

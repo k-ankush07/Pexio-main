@@ -2,7 +2,7 @@ import React from "react";
 import Container from "./Container";
 import Badge from "./Badge";
 
-const ASSETS = "https://pexio.app/assets";
+const ASSETS = "https://pexio.app/images";
 
 const apps = [
   {
@@ -28,7 +28,7 @@ const apps = [
     name: "Pexio A/B Testing",
     label: "CONVERSION OPTIMIZATION",
     logo: `${ASSETS}/pexioab-logo.svg`,
-    image: `${ASSETS}/pexioab.svg`,
+    image: `${ASSETS}/Pexio-Experiment-Dashboard 4.svg`,
     description:
       "Run experiments, compare storefront experiences and make smarter operational decisions with real statistical precision.",
     features: [

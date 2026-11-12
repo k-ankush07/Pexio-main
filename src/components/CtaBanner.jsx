@@ -6,7 +6,7 @@ export default function CtaBanner() {
   return (
     <section className="pb-[40px] md:pb-[80px] border-b border-[#E2E8F0]">
       <Container>
-        <div className="rounded-[24px] md:rounded-[40px] bg-[url('https://pexio.app/assets/Container.png')] bg-cover bg-center bg-no-repeat px-[20px] py-[32px] md:py-[60px] text-center md:px-[40px]">
+        <div className="rounded-[24px] md:rounded-[40px] bg-[url('https://pexio.app/images/Container.png')] bg-cover bg-center bg-no-repeat px-[20px] py-[32px] md:py-[60px] text-center md:px-[40px]">
           <span className="inline-flex items-center gap-[6px] rounded-full bg-[#FFFFFFE5] px-[12px] py-[5px] text-[12px] font-semibold tracking-[0.04em] text-[#703CE1]">
             <span className="h-[8px] w-[8px] rounded-full bg-[#703CE1]" />
             TRANSFORM YOUR COMMERCE STACK

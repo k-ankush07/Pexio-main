@@ -1,6 +1,6 @@
 import Container from "./Container";
 
-const A = "https://apps.pexio.app/assets";
+const A = "https://apps.pexio.app/images";
 
 const links = [
   { label: "About Us", href: "/about" },
@@ -24,7 +24,7 @@ export default function Footer() {
             }}
           >
             <img
-              src="https://pexio.app/assets/Brand%20Logo%20Area.svg"
+              src="https://pexio.app/images/Brand%20Logo%20Area.svg"
               alt="Pexio AB Testing"
               className="h-auto w-[110px] object-contain md:w-[130px]"
             />

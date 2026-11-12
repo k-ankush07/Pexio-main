@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Button from "./Button";
 import Container from "./Container";
 
-const LOGO = "https://pexio.app/assets/Group%201707480593.svg";
+const LOGO = "https://pexio.app/images/Group%201707480593.svg";
 const CARD_SHADOW =
   "shadow-[0px_8px_32px_0px_#703CE112,0px_0px_0px_1px_#703CE11A]";
 

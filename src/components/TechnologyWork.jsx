@@ -2,7 +2,7 @@ import React from "react";
 import Container from "./Container";
 import Badge from "./Badge";
 
-const ASSETS = "https://pexio.app/assets";
+const ASSETS = "https://pexio.app/images";
 
 const checklist = [
   "Shopify OS 2.0 Theme App Extensions",

@@ -2,7 +2,7 @@ import React from "react";
 import Container from "./Container";
 import Button from "./Button";
 
-const ASSETS = "https://pexio.app/assets";
+const ASSETS = "https://pexio.app/images";
 
 export default function Hero() {
   return (
