@@ -22,11 +22,11 @@ const cards = [
 
 export default function Philosophy() {
   return (
-    <section className="py-[80px] border-t border-[#E4E2F0]">
+    <section className="py-[40px] md:py-[80px] border-t border-[#E4E2F0]">
       <Container>
         <div className="mx-auto text-center">
           <Badge>OUR PHILOSOPHY</Badge>
-          <h2 className="mt-[16px] text-[32px] leading-[38px] font-semibold tracking-tight text-[#1A1523] md:text-[44px] md:leading-[52px]">
+          <h2 className="mt-[16px] text-[28px] leading-[38px] font-semibold tracking-tight text-[#1A1523] md:text-[44px] md:leading-[52px]">
             Building Better Tools for the Future of Commerce.
           </h2>
           <p className="mt-[24px] text-[16px] leading-[23px] text-[#6B6580]">

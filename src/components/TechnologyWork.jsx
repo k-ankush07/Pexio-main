@@ -15,18 +15,18 @@ const whiteCard =
 
 export default function TechnologyWork() {
   return (
-    <section className="py-[80px] border-t border-[#E4E2F0]">
+    <section className="py-[40px] md:py-[80px] border-t border-[#E4E2F0]">
       <Container>
         <div className="mx-auto text-center">
           <Badge>THE PEXIO ADVANTAGE</Badge>
-          <h2 className="mt-[10px] text-[32px] leading-[38px] font-semibold tracking-tight text-[#1A1523] md:text-[44px] md:leading-[52px]">
+          <h2 className="mt-[10px] text-[28px] leading-[38px] font-semibold tracking-tight text-[#1A1523] md:text-[44px] md:leading-[52px]">
             Technology That Works for Your Growth.
           </h2>
         </div>
 
-        <div className="mt-[60px] grid grid-cols-1 gap-[24px] md:grid-cols-12">
+        <div className="mt-[28px] md:mt-[60px] grid grid-cols-1 gap-[24px] md:grid-cols-12">
           {/* Big purple card */}
-          <div className="relative flex flex-col justify-between rounded-[28px] border border-[#F1F5F9] bg-[linear-gradient(43.79deg,#703CE1_19.27%,#1E0555_115.21%)] p-[36px] shadow-[0px_25px_50px_-12px_#6D28D959] md:col-span-5">
+          <div className="relative flex flex-col justify-between rounded-[28px] border border-[#F1F5F9] bg-[linear-gradient(43.79deg,#703CE1_19.27%,#1E0555_115.21%)] p-[24px] md:p-[36px] shadow-[0px_25px_50px_-12px_#6D28D959] md:col-span-5">
             {" "}
             <div>
               <div className="flex items-start justify-between">
@@ -42,7 +42,7 @@ export default function TechnologyWork() {
                 </div>
               </div>
 
-              <h3 className="mt-[10px] text-[30px] font-bold leading-[36px] text-white">
+              <h3 className="mt-[10px] text-[24px] md:text-[30px] font-bold leading-[36px] text-white">
                 Built for Shopify
               </h3>
               <p className="mt-[10px] font-[400] text-[15px] leading-[23px] text-[#FFFFFFD9]">
@@ -51,7 +51,7 @@ export default function TechnologyWork() {
                 Extensibility standards and requirements.
               </p>
             </div>
-            <ul className="mt-[80px] flex flex-col gap-[14px] rounded-[16px] bg-white p-[22px] shadow-[0px_20px_45px_-15px_#7350E614]">
+            <ul className="mt-[30px] md:mt-[80px] flex flex-col gap-[14px] rounded-[16px] bg-white p-[22px] shadow-[0px_20px_45px_-15px_#7350E614]">
               {checklist.map((item) => (
                 <li
                   key={item}
@@ -72,7 +72,7 @@ export default function TechnologyWork() {
           <div className="flex flex-col gap-[24px] md:col-span-7">
             {/* Simple Experiences */}
             <div
-              className={`${whiteCard} flex flex-col items-start justify-between gap-[20px] p-[33px] sm:flex-row sm:items-center`}
+              className={`${whiteCard} flex flex-col items-start justify-between gap-[20px] p-[24px] md:p-[33px] sm:flex-row sm:items-center`}
             >
               <div className="max-w-[300px]">
                 <span className="flex h-[44px] w-[44px] items-center justify-center rounded-[16px] bg-[#F1ECFF]">
@@ -110,7 +110,7 @@ export default function TechnologyWork() {
             <div className="grid grid-cols-1 gap-[24px] sm:grid-cols-2">
               {/* Growth Focused */}
               <div
-                className={`${whiteCard} flex flex-col justify-between p-[29px]`}
+                className={`${whiteCard} flex flex-col justify-between p-[24px] md:p-[29px]`}
               >
                 <div>
                   <span className="flex h-[44px] w-[44px] items-center justify-center rounded-[16px] bg-[#F1ECFF]">
@@ -138,7 +138,7 @@ export default function TechnologyWork() {
 
               {/* Continuous Innovation */}
               <div
-                className={`${whiteCard} flex flex-col justify-between p-[29px]`}
+                className={`${whiteCard} flex flex-col justify-between p-[24px] md:p-[29px]`}
               >
                 <div>
                   <span className="flex h-[44px] w-[44px] items-center justify-center rounded-[16px] bg-[#F1ECFF]">

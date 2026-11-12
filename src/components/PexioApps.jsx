@@ -121,7 +121,7 @@ function Arrow() {
 function AppCard({ app }) {
   return (
     <article
-      className={`${app.card} flex flex-col rounded-[24px] border border-[#E2E8F0] p-[32px] shadow-[0px_4px_16px_0px_#703CE10D,0px_1px_3px_0px_#1018280A] md:p-6`}
+      className={`${app.card} flex flex-col rounded-[24px] border border-[#E2E8F0] p-[24px] md:p-[32px] shadow-[0px_4px_16px_0px_#703CE10D,0px_1px_3px_0px_#1018280A] md:p-6`}
     >
       {" "}
       {/* Preview image */}
@@ -142,19 +142,19 @@ function AppCard({ app }) {
           >
             {app.label}
           </p>
-          <h3 className="text-[30px] leading-[28px] font-bold text-[#1A1523]">
+          <h3 className="text-[24px] md:text-[30px] leading-[28px] font-bold text-[#1A1523]">
             {app.name}
           </h3>
         </div>
       </div>
-      <p className="mt-[20px] text-[16px] leading-[20px] text-[#6B6580]">
+      <p className="mt-[20px] text-[14px] md:text-[16px] leading-[20px] text-[#6B6580]">
         {app.description}
       </p>
       <ul className="mt-[20px] flex flex-col gap-[12px]">
         {app.features.map((f) => (
           <li
             key={f}
-            className="flex items-start gap-[10px] text-[14px] font-[500] leading-[18px] text-[#1A1523]"
+            className="flex items-start gap-[10px] text-[13px]  md:text-[14px] font-[500] leading-[18px] text-[#1A1523]"
           >
             <CheckIcon src={app.check} />
             <span>{f}</span>
@@ -174,24 +174,24 @@ function AppCard({ app }) {
 
 export default function PexioApps() {
   return (
-    <section className="py-[80px]">
+    <section className="py-[40px] md:py-[80px]">
       <Container>
         {/* Heading */}
         <div className="mx-auto text-center">
           <Badge>PRODUCT ECOSYSTEM</Badge>
 
-          <h2 className="mt-[10px] text-[32px] leading-[38px] font-semibold tracking-tight text-[#1A1523] md:text-[44px] md:leading-[52px]">
+          <h2 className="mt-[10px] text-[32px] leading-[28px] font-semibold tracking-tight text-[#1A1523] md:text-[44px] md:leading-[52px]">
             Meet the Pexio App Ecosystem
           </h2>
 
-          <p className="mt-[20px] text-[14px] leading-[28px] text-[#6B6580] md:text-[16px]">
+          <p className="mt-[20px]  leading-[24px] md:leading-[28px] text-[#6B6580] text-[16px]">
             Four specialized applications. One mission: making Shopify commerce
             smarter, simpler and more effective.
           </p>
         </div>
 
         {/* Cards grid */}
-        <div className="mt-[30px] grid grid-cols-1 gap-[30px] md:grid-cols-2">
+        <div className="mt-[30px] grid grid-cols-1 gap-[24px] md:gap-[30px] md:grid-cols-2">
           {apps.map((app) => (
             <AppCard key={app.name} app={app} />
           ))}
