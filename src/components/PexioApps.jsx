@@ -180,11 +180,11 @@ export default function PexioApps() {
         <div className="mx-auto text-center">
           <Badge>PRODUCT ECOSYSTEM</Badge>
 
-          <h2 className="mt-[10px] text-[32px] leading-[28px] font-semibold tracking-tight text-[#1A1523] md:text-[44px] md:leading-[52px]">
+          <h2 className="mt-[10px] text-[28px] leading-[28px] font-semibold tracking-tight text-[#1A1523] md:text-[44px] md:leading-[52px]">
             Meet the Pexio App Ecosystem
           </h2>
 
-          <p className="mt-[20px]  leading-[24px] md:leading-[28px] text-[#6B6580] text-[16px]">
+          <p className="mt-[20px]  leading-[24px] md:leading-[28px] text-[#6B6580] text-[14px] sm:text-[16px]">
             Four specialized applications. One mission: making Shopify commerce
             smarter, simpler and more effective.
           </p>

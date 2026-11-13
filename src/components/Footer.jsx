@@ -4,9 +4,9 @@ const A = "https://apps.pexio.app/images";
 
 const links = [
   { label: "About Us", href: "/about" },
-  { label: "Contact Us", href: "#contact" },
-  { label: "Terms & Conditions", href: "#" },
-  { label: "Privacy Policy", href: "#" },
+  { label: "Contact Us", href: "/contact" },
+  { label: "Terms & Conditions", href: "/terms-and-condition" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
 ];
 
 export default function Footer() {
