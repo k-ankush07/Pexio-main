@@ -29,14 +29,14 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="border-y border-[#E4E2F0] bg-[#FAF9FD] py-[40px] md:py-[80px]">
+    <section id="solutions" className="border-y border-[#E4E2F0] bg-[#FAF9FD] py-[40px] md:py-[80px]">
       <Container>
         <div className="mx-auto text-center">
           <Badge>PEXIO SERVICES</Badge>
           <h2 className="mt-[10px] text-[28px] leading-[32px] font-semibold tracking-tight text-[#1A1523] md:text-[44px] md:leading-[52px]">
             Apps are the start. Our team takes you further.
           </h2>
-          <p className="mt-[16px] text-[16px] leading-[23px] text-[#6B6580]">
+          <p className="mt-[20px] text-[14px]  sm:text-[16px] leading-[23px] text-[#6B6580]">
             The engineers who build Pexio also work directly with brands and
             agencies from a one-off audit to an ongoing growth program.
           </p>

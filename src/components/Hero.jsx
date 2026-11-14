@@ -20,7 +20,7 @@ export default function Hero() {
               One Ecosystem. Four Powerful Ways to Grow Your Shopify Store.
             </h1>
 
-            <p className="mt-[20px] max-w-full md:max-w-[560px] text-[15px] leading-[23px] text-[#FFFFFFD9]">
+            <p className="mt-[20px] max-w-full md:max-w-[560px] text-[16px] leading-[23px] text-[#FFFFFFD9]">
               From smarter forms to conversion experiments, cart experiences and
               checkout workflows, Pexio brings essential Shopify tools together.
             </p>
@@ -29,12 +29,12 @@ export default function Hero() {
               <Button variant="white" arrow>
                 Explore Our Apps
               </Button>
-              <Button
+              {/* <Button
                 variant="outline"
                 className="!border-solid !border-white/70 !bg-transparent !text-white hover:!bg-white/10"
               >
                 Discover Pexio
-              </Button>
+              </Button> */}
             </div>
 
           </div>

@@ -3,7 +3,8 @@ import Container from "./Container";
 const A = "https://apps.pexio.app/images";
 
 const links = [
-  { label: "About Us", href: "/about" },
+  { label: "Our Apps", href: "/#apps" },
+  { label: "Solutions", href: "/#solutions" },
   { label: "Contact Us", href: "/contact" },
   { label: "Terms & Conditions", href: "/terms-and-condition" },
   { label: "Privacy Policy", href: "/privacy-policy" },

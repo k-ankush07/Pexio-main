@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import Button from "./Button";
 import Container from "./Container";
 
@@ -8,14 +8,24 @@ const CARD_SHADOW =
   "shadow-[0px_8px_32px_0px_#703CE112,0px_0px_0px_1px_#703CE11A]";
 
 const links = [
-  { label: "Our Apps", to: "/apps" },
-  { label: "Solutions", to: "/solutions" },
-  { label: "About Us", to: "/about" },
+  { label: "Our Apps", to: "/#apps" },
+  { label: "Solutions", to: "/#solutions" },
   { label: "Contact Us", to: "/contact" },
 ];
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+
+  const goToApps = () => {
+    setOpen(false);
+    if (pathname === "/") {
+      document.getElementById("apps")?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate("/#apps");
+    }
+  };
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
@@ -58,7 +68,9 @@ export default function Navbar() {
 
           {/* Desktop button */}
           <div className="hidden md:block">
-            <Button arrow>Explore Our Apps</Button>
+            <Button arrow onClick={goToApps}>
+              Explore Our Apps
+            </Button>
           </div>
 
           {/* Mobile hamburger */}
@@ -88,16 +100,10 @@ export default function Navbar() {
           open ? "visible opacity-100" : "invisible opacity-0"
         }`}
       >
-        <div
-          className={`overflow-hidden rounded-xl bg-white ${CARD_SHADOW}`}
-        >
+        <div className={`overflow-hidden rounded-xl bg-white ${CARD_SHADOW}`}>
           {/* Top row: logo + close */}
           <div className="flex items-center justify-between px-[15px] py-[15px]">
-            <Link
-              to="/"
-              onClick={() => setOpen(false)}
-              aria-label="Pexio home"
-            >
+            <Link to="/" onClick={() => setOpen(false)} aria-label="Pexio home">
               <div className="w-[96px] pl-[10px]">
                 <img src={LOGO} alt="" className="w-full" />
               </div>
@@ -142,7 +148,7 @@ export default function Navbar() {
 
         {/* Bottom button */}
         <div className="mt-auto">
-          <Button arrow className="w-full">
+          <Button arrow className="w-full" onClick={goToApps}>
             Explore Our Apps
           </Button>
         </div>

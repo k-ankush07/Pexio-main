@@ -11,10 +11,10 @@ const apps = [
     logo: `${ASSETS}/syncform-logo.svg`,
     image: `${ASSETS}/syncform.svg`,
     description:
-      "Simplify form workflows and keep important business information connected with real-time Shopify admin mapping.",
+      "Create custom forms for your Shopify store and collect submissions with real-time admin sync — no coding required.",
     features: [
+      "Drag-and-drop form builder with customizable fields and layouts",
       "Real-time Shopify Metafield sync to Customer & Order records",
-      "Custom B2B and wholesale dynamic conditional inquiry logic",
       "Instant scriptless speed via native Shopify theme app extensions",
     ],
     cta: "Explore Syncform",
@@ -30,11 +30,11 @@ const apps = [
     logo: `${ASSETS}/pexioab-logo.svg`,
     image: `${ASSETS}/Pexio-Experiment-Dashboard 4.svg`,
     description:
-      "Run experiments, compare storefront experiences and make smarter operational decisions with real statistical precision.",
+      "Run powerful A/B and multivariate tests on your storefront, then let real statistical data guide every merchandising and UX decision.",
     features: [
-      "Native OS 2.0 block & section testing without developer overhead",
-      "Zero-flicker edge execution script guaranteeing speed score preservation",
-      "Statistical confidence scoring with full checkout revenue tracking",
+      "Launch native OS 2.0 block & section tests without touching a developer",
+      "Visual editor for block, section, and theme-level experiments",
+      "Know exactly which variant drives more checkout revenue",
     ],
     cta: "Explore Pexio A/B testing",
     href: "#",
@@ -47,13 +47,13 @@ const apps = [
     name: "Cartplus",
     label: "CART OPTIMIZATION",
     logo: `${ASSETS}/cart-logo.svg`,
-    image: `${ASSETS}/cart-img.svg`,
+    image: `${ASSETS}/Mask group.webp`,
     description:
-      "Create better shopping cart experiences and unlock opportunities to dramatically increase average order value.",
+      "Replace your default cart with a high-converting slide-out cart drawer that upsells, cross-sells, and keeps shoppers checking out faster.",
     features: [
-      "Dynamic free shipping, tier discounts & complimentary gift progression",
-      "AI-driven in-cart upsells, product cross-sells and smart bundle triggers",
-      "Accelerated 1-click discount redemption and Shop Pay checkout sync",
+      "Fully branded slide-out cart drawer with free shipping progress bar",
+      "Reduce cart abandonment with real-time inventory and urgency alerts",
+      "Boost AOV with tiered free shipping and gift-with-purchase rewards",
     ],
     cta: "Explore Cartplus",
     href: "#",
@@ -68,17 +68,18 @@ const apps = [
     logo: `${ASSETS}/crm-logo.svg`,
     image: `${ASSETS}/checkoutcrm.svg`,
     description:
-      "Bring greater visibility and real-time control to checkout workflows, VIP segmentation, and long-term customer management.",
+      "Build fully custom checkout pages and high-converting sales funnels with a drag-and-drop page builder — no developers required.",
     features: [
-      "Zero checkout.liquid required 100% Checkout Extensibility ready",
-      "Automated VIP customer tagging based on lifetime spending triggers",
-      "Integrated post-purchase feedback surveys with instant ESP synchronization",
+      "Drag-and-drop page builder for checkout, upsell, and thank-you pages",
+      "Real-time funnel analytics with revenue attribution per step",
+      "Boost revenue with one-click upsells and downsells at checkout",
     ],
-    cta: "Explore Checkout CRM",
+    cta: "Coming Soon",
     href: "#",
+    disabled: true,
     card: "bg-[#FFF4F0]",
     accent: "text-[#6B6580]",
-    button: "bg-[#C0775C] hover:bg-[#A9654B]",
+    button: "bg-[#C0775C]",
     check: `${ASSETS}/crm-circle.svg`,
   },
 ];
@@ -125,12 +126,12 @@ function AppCard({ app }) {
     >
       {" "}
       {/* Preview image */}
-      <div className="flex items-center justify-center">
+      <div className="flex h-[240px] items-center justify-center sm:h-[300px] md:h-[340px]">
         <img
           src={app.image}
           alt={`${app.name} preview`}
           loading="lazy"
-          className="max-h-full w-full object-contain"
+          className="h-full w-full object-contain"
         />
       </div>
       {/* Title */}
@@ -150,7 +151,7 @@ function AppCard({ app }) {
       <p className="mt-[20px] text-[14px] md:text-[16px] leading-[20px] text-[#6B6580]">
         {app.description}
       </p>
-      <ul className="mt-[20px] flex flex-col gap-[12px]">
+      <ul className="mt-[20px] mb-[20px] flex flex-col gap-[12px]">
         {app.features.map((f) => (
           <li
             key={f}
@@ -161,20 +162,31 @@ function AppCard({ app }) {
           </li>
         ))}
       </ul>
-      <a
-        href={app.href}
-        className={`mt-[20px] flex h-[44px] items-center justify-center gap-[6px] rounded-[8px] text-[14px] font-semibold text-white transition-colors ${app.button}`}
-      >
-        {app.cta}
-        <Arrow />
-      </a>
+      {app.disabled ? (
+        <button
+          type="button"
+          disabled
+          aria-disabled="true"
+          className={`mt-auto flex h-[44px] w-full cursor-not-allowed items-center justify-center gap-[6px] rounded-[8px] text-[14px] font-semibold text-white opacity-60 ${app.button}`}
+        >
+          {app.cta}
+        </button>
+      ) : (
+        <a
+          href={app.href}
+          className={`mt-auto flex h-[44px] items-center justify-center gap-[6px] rounded-[8px] text-[14px] font-semibold text-white transition-colors ${app.button}`}
+        >
+          {app.cta}
+          <Arrow />
+        </a>
+      )}
     </article>
   );
 }
 
 export default function PexioApps() {
   return (
-    <section className="py-[40px] md:py-[80px]">
+    <section id="apps" className="scroll-mt-[20px] py-[40px] md:py-[80px]">
       <Container>
         {/* Heading */}
         <div className="mx-auto text-center">
