@@ -166,7 +166,7 @@ export default function Contact() {
       </div>
 
       {/* Content */}
-      <section className="py-[40px] md:py-[80px]">
+      <section className="py-[40px] sm:py-[60px] md:py-[80px]">
         <Container>
           <div className="mx-auto grid gap-[40px] lg:grid-cols-[2fr_3fr] lg:gap-[60px]">
             {/* Left */}

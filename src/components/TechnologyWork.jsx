@@ -15,7 +15,7 @@ const whiteCard =
 
 export default function TechnologyWork() {
   return (
-    <section className="py-[40px] md:py-[80px] border-t border-[#E4E2F0]">
+    <section className="py-[40px] sm:py-[60px] md:py-[80px] border-t border-[#E4E2F0]">
       <Container>
         <div className="mx-auto text-center">
           <Badge>THE PEXIO ADVANTAGE</Badge>

@@ -29,7 +29,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="solutions" className="border-y border-[#E4E2F0] bg-[#FAF9FD] py-[40px] md:py-[80px]">
+    <section id="solutions" className="border-y border-[#E4E2F0] bg-[#FAF9FD] py-[40px] sm:py-[60px] md:py-[80px]">
       <Container>
         <div className="mx-auto text-center">
           <Badge>PEXIO SERVICES</Badge>
