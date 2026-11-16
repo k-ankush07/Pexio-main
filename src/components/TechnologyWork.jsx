@@ -168,9 +168,9 @@ export default function TechnologyWork() {
                       Shopify Editions Sync
                     </span>
                   </div>
-                  <span className="rounded-[8px] bg-[#703CE1] leading-[16px] px-[12px] py-[4px] text-[11px] font-semibold text-white">
+                  {/* <span className="rounded-[8px] bg-[#703CE1] leading-[16px] px-[12px] py-[4px] text-[11px] font-semibold text-white">
                     Auto-Sync
-                  </span>
+                  </span> */}
                 </div>
               </div>
             </div>
