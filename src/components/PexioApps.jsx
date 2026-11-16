@@ -9,7 +9,7 @@ const apps = [
     name: "Syncform",
     label: "FORMS & SYNCHRONIZATION",
     logo: `${ASSETS}/syncform-logo.svg`,
-    image: `${ASSETS}/syncform.svg`,
+    image: `${ASSETS}/Pexio-Experiment-Dashboard 40.svg`,
     description:
       "Create custom forms for your Shopify store and collect submissions with real-time admin sync — no coding required.",
     features: [
@@ -18,7 +18,7 @@ const apps = [
       "Instant scriptless speed via native Shopify theme app extensions",
     ],
     cta: "Explore Syncform",
-    href: "#",
+    href: "https://apps.shopify.com/syncform",
     card: "bg-[#EFFFF7]",
     accent: "text-[#6B6580]",
     button: "bg-[#12B27A] hover:bg-[#0F9D6C]",
@@ -47,7 +47,7 @@ const apps = [
     name: "Cartplus",
     label: "CART OPTIMIZATION",
     logo: `${ASSETS}/cart-logo.svg`,
-    image: `${ASSETS}/Mask group.webp`,
+    image: `${ASSETS}/Pexio-Experiment-Dashboard 445.svg`,
     description:
       "Replace your default cart with a high-converting slide-out cart drawer that upsells, cross-sells, and keeps shoppers checking out faster.",
     features: [
@@ -56,7 +56,7 @@ const apps = [
       "Boost AOV with tiered free shipping and gift-with-purchase rewards",
     ],
     cta: "Explore Cartplus",
-    href: "#",
+    href: "https://apps.shopify.com/cart-plus-3",
     card: "bg-[#FCFAFF]",
     accent: "text-[#703CE1]",
     button: "bg-[#703CE1] hover:bg-[#5F2FCB]",
