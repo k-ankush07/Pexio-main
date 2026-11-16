@@ -14,7 +14,7 @@ const APPS = [
   "Checkout CRM",
   "Not sure yet",
 ];
-const TOPICS = ["General topic", "General Queries"];
+const TOPICS = ["Technical Support", "General Queries"];
 
 const REASONS = [
   {
