@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import Container from "../components/Container";
 import Button from "../components/Button";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8001";
+const API_URL = import.meta.env.VITE_API_URL || "https://experiments.pexio.app/backend-api";
 const HERO_BG = "https://pexio.app/images/Contact%20hero.png";
 
 const APPS = [
@@ -14,7 +14,7 @@ const APPS = [
   "Checkout CRM",
   "Not sure yet",
 ];
-const TOPICS = ["General topic", "General Question's", "General Queries"];
+const TOPICS = ["General topic", "General Queries"];
 
 const REASONS = [
   {
@@ -112,7 +112,7 @@ export default function Contact() {
     };
 
     try {
-      const res = await fetch(`${API_URL}/api/website-contact/form`, {
+      const res = await fetch(`${API_URL}/website-contact/form`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
