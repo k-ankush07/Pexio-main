@@ -4,6 +4,9 @@ import Button from "./Button";
 
 const ASSETS = "https://pexio.app/images";
 
+const goToApps = () =>
+  document.getElementById("apps")?.scrollIntoView({ behavior: "smooth" });
+
 export default function Hero() {
   return (
     <section className="pt-[40px] pb-[40px] md:pt-[60px] md:pb-[80px]">
@@ -26,7 +29,7 @@ export default function Hero() {
             </p>
 
             <div className="mt-[24px] sm:mt-[30px] flex flex-col gap-[12px] sm:flex-row">
-              <Button variant="white" arrow>
+              <Button variant="white" arrow onClick={goToApps}>
                 Explore Our Apps
               </Button>
               {/* <Button
