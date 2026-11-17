@@ -37,7 +37,7 @@ const apps = [
       "Know exactly which variant drives more checkout revenue",
     ],
     cta: "Explore Pexio A/B testing",
-    href: "#",
+    href: "https://ab.pexio.app",
     card: "bg-[#FCFAFF]",
     accent: "text-[#703CE1]",
     button: "bg-[#703CE1] hover:bg-[#5F2FCB]",
